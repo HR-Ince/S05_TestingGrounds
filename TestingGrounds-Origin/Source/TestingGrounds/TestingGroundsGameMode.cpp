@@ -1,7 +1,7 @@
 // Copyright 1998-2017 Epic Games, Inc. All Rights Reserved.
 
 #include "TestingGroundsGameMode.h"
-#include "TestingGroundsHUD.h"
+#include "Player/HUD/TestingGroundsHUD.h"
 #include "Player/FirstPersonCharacter.h"
 #include "UObject/ConstructorHelpers.h"
 
