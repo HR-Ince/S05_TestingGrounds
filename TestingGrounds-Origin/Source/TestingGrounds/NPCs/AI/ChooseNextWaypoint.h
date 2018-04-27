@@ -18,10 +18,10 @@ private:
 	virtual EBTNodeResult::Type ExecuteTask(UBehaviorTreeComponent& OwnerComp, uint8* NodeMemory) override;
 
 protected:
-	UPROPERTY(EditAnywhere, Category = "Blackbaord")
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
 	struct FBlackboardKeySelector IndexKey;
 	
-	UPROPERTY(EditAnywhere, Category = "Blackbaord")
+	UPROPERTY(EditAnywhere, Category = "Blackboard")
 	struct FBlackboardKeySelector NextWaypointKey;
 	
 };
