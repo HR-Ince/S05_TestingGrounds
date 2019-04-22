@@ -46,6 +46,9 @@ void AGun_Rifle::OnFire()
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
+		
+		UE_LOG(LogTemp, Warning, TEXT("This a testing statement. %s"), *ProjectileClass->GetDescription());
+
 		UWorld* const World = GetWorld();
 		if (World != NULL)
 		{
@@ -59,6 +62,7 @@ void AGun_Rifle::OnFire()
 
 			// spawn the projectile at the muzzle
 			World->SpawnActor<ABallProjectile>(ProjectileClass, SpawnLocation, SpawnRotation, ActorSpawnParams);
+
 		}
 	}
 
