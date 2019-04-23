@@ -46,9 +46,6 @@ void AGun_Rifle::OnFire()
 	// try and fire a projectile
 	if (ProjectileClass != NULL)
 	{
-		
-		UE_LOG(LogTemp, Warning, TEXT("This a testing statement. %s"), *ProjectileClass->GetDescription());
-
 		UWorld* const World = GetWorld();
 		if (World != NULL)
 		{
